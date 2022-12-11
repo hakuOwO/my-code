@@ -10,7 +10,7 @@ function repeatm(x, k) {
 }
 async function spam() {
   try{
-    if(i > json.length) return
+    if(i > json.length) return console.log('Da Die Het Token Vui Long Thay Token Moi Va Thu Lai');
   const res = (await axios.post(`https://graph.facebook.com/${uid}_${idpost}/comments/?message=${text}&access_token=` + json[repeatm(i, json.length) + 1] )).data
   console.log(res)
   
