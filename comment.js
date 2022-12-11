@@ -1,12 +1,13 @@
 const axios = require('axios')
 var json = []; // ghi token o day
-function repeatm(x, k) {
-  return x % k;
-}
 var text = ""; //gan text vao day
 var i = 0
 var uid = ""; // nhet uid ban vao day
 var idpost = "";// nhet id post vao day
+var timedlay  = "" || 5;// settime delay giua moi cmt ( tinh theo s )
+function repeatm(x, k) {
+  return x % k;
+}
 async function spam() {
   try{
     if(i > json.length) return
@@ -18,4 +19,4 @@ async function spam() {
     i+= 1;
 }
 }
-setInterval(spam, 5000);
+setInterval(spam, timedlay * 1000);
